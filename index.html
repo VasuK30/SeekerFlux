@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeekerFlux</title>
+    <style>
+
+        body {
+		 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2980B9;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #34495E;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        form {
+            background-color: #ECF0F1;
+            padding: 20px;
+            border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #BDC3C7;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #2980B9;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #3498DB;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .color-theme-1 {
+            background-color: #E74C3C;
+        }
+
+        .color-theme-2 {
+            background-color: #8E44AD;
+        }
+
+        .color-theme-3 {
+            background-color: #F39C12;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SeekerFlux</h1>
+        <p>Your Gateway to Growth and Opportunity</p>
+    </header>
+
+    
+
+    <div class="container">
+
+        <!-- Services Section -->
+        <div id="services" class="section">
+            <h2>Specialization</h2>
+            <p>Our specialization is Information Technology (IT) & Software Development & Analytics - Developers, Engineers, Data Scientist, AI/ML Specialists, Banking and Financial Services - Investment Bankers, Risk Analysts, Financial Advisors. Retail & E-commerce - Sales Manager, Category Manager, Techno Commercial roles, Channel Sales Manager, Manufacturing & Engineering - Mechanical Engineers, Production Managers, Quality Analysts, Construction & Real Estate - Project Manager, Civil Engineers, Telecommunication - Network Engineer, Cybersecurity Experts, Media & Entertainment, Legal & Compliance - Lawyers, Compliance officers, FMCG, Education & Ed-Tech, Hospitality and many more. We have vast network of professionals across various sectors, and this list represents only a selection of the industries we serve. Contact us today to discuss how we can meet your specific hiring need.</p>
+
+            <div class="form-container">
+                <!-- Organization Collaboration Form -->
+                <form action="mailto:vasundhara.k@seekerflux.com" method="post" enctype="multipart/form-data">
+                    <h3>Organization Collaboration</h3>
+                    <label for="org-name">Organization Name</label>
+                    <input type="text" id="org-name" name="organization_name" required>
+
+                    <label for="poc-name">Point of Contact Name</label>
+                    <input type="text" id="poc-name" name="poc_name" required>
+
+                    <label for="contact-number">Contact Number</label>
+                    <input type="text" id="contact-number" name="contact_number" required>
+
+                    <label for="email-id">Email ID</label>
+                    <input type="email" id="email-id" name="email_id" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <!-- Candidate Opportunity Form -->
+                <form action="mailto:vasundhara.k@seekerflux.com" method="post" enctype="multipart/form-data">
+                    <h3>Candidate Opportunities</h3>
+                    <label for="salutation">Salutation</label>
+                    <select id="salutation" name="salutation" required>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required>
+
+                    <label for="current-org">Current Organization</label>
+                    <input type="text" id="current-org" name="current_org" required>
+
+                    <label for="current-ctc">Current CTC</label>
+                    <input type="text" id="current-ctc" name="current_ctc" required>
+
+                    <label for="expected-ctc">Expected CTC</label>
+                    <input type="text" id="expected-ctc" name="expected_ctc" required>
+
+                    <label for="notice-period">Notice Period</label>
+                    <input type="text" id="notice-period" name="notice_period" required>
+
+                    <label for="current-city">Current City</label>
+                    <input type="text" id="current-city" name="current_city" required>
+
+                    <label for="preferred-city">Preferred City</label>
+                    <input type="text" id="preferred-city" name="preferred_city" required>
+
+                    <label for="resume">Resume (Word/PDF)</label>
+                    <input type="file" id="resume" name="resume" accept=".doc,.docx,.pdf" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div id="about-us" class="section">
+            <h2>About Us</h2>
+            <p>We are SeekerFlux, a dynamic company committed to bridging the gap between organizations and top-tier talent. Our services cater to both businesses and professionals looking for opportunities to grow and succeed.</p>
+        </div>
+
+        <!-- Career Section -->
+        <div id="career" class="section">
+            <h2>Career</h2>
+            <p>Join our team and be part of a forward-thinking, creative environment. We are always looking for innovative minds to join our journey.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SeekerFlux. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
